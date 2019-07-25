@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  imageurl: MyString
+  name: MyString
+  description: MyString
+  apperception: 1
+  charm: 1
+  aggression: 1
+
+two:
+  imageurl: MyString
+  name: MyString
+  description: MyString
+  apperception: 1
+  charm: 1
+  aggression: 1
