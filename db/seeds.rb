@@ -13,11 +13,13 @@ DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean
 
 User.delete_all
+#User.destroy_all desleted by calling the destroy method 
 Game.delete_all
 Card.delete_all
 GameCard.delete_all
 
 testuser = User.create(username: 'mrtest', password: '1234')
+testuser2 = User.create(username: 'Daniel', password: 'daniel123')
 testcard1 = Card.create(imageurl: 'https://vignette.wikia.nocookie.net/westworld/images/d/d8/Maeve_Les_Ecorches.jpg/revision/latest?cb=20180530183051', name: 'Maeve', description: 'good', apperception: 15, charm: 18, aggression: 9)
 testcard2 = Card.create(imageurl: 'https://vignette.wikia.nocookie.net/westworld/images/b/b6/Bernard_Les_Ecorches.png/revision/latest/scale-to-width-down/310?cb=20180604190617', name: 'Bernard', description: 'great', apperception: 9, charm: 12, aggression: 14)
 testcard3 = Card.create(imageurl: 'https://vignette.wikia.nocookie.net/westworld/images/5/51/Dolores_Abernathy_Vanishing_Point.jpg/revision/latest?cb=20180613181613', name: 'Dolores', description: 'evil', apperception: 8, charm: 9, aggression: 19)
@@ -28,3 +30,5 @@ testgamecard1 = GameCard.create(game_id: 1, card_id: 2)
 testgamecard2 = GameCard.create(game_id: 2, card_id: 2)
 testgamecard3 = GameCard.create(game_id: 3, card_id: 1)
 testgamecard4 = GameCard.create(game_id: 2, card_id: 1)
+
+puts "finished user creation"

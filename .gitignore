@@ -21,3 +21,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+
+# added for JWT - saving secret info to local environment
+/config/local_env.yml
