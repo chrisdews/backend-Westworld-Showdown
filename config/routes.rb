@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
         resources :users, :games, :cards, only: [:create, :show, :index, :edit, :destroy]
+        post '/login', to: 'auth#create'
+        get '/validate', to: 'auth#validate'
     end
   end
 end
