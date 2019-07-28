@@ -1,3 +1,6 @@
-class GamecardSerializer < ActiveModel::Serializer
-  attributes :id
+class GameCardSerializer < ActiveModel::Serializer
+  attributes :id, :card_id, :game_id
 end
+
+
+
