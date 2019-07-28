@@ -50,3 +50,5 @@ group :test do
   gem 'database_cleaner'
 end
 # database cleaner for test db.
+
+gem "jwt", "~> 2.2"
