@@ -1,10 +1,13 @@
 class Api::V1::AuthController < ApplicationController
   def create
+   
     user = User.find_by(username: user_login_params[:username])
     if user && user.authenticate(user_login_params[:password])
-        render json: { user: UserSerializer.new(user), jwt: issue_token(user_id: user.id) }, status: :accepted
+     
+        render json: { user: UserSerializer.new(user), token: issue_token(user_id: user.id) }, status: :accepted
     else
-        render json: { message: 'Invalid username or password' }, status: :unauthorized
+     
+        render json: { errors: 'Invalid username or password' }, status: :unauthorized
     end
 end
 
