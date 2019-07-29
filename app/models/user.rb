@@ -3,4 +3,6 @@ class User < ApplicationRecord
     has_many :games
     has_many :game_cards, through: :games
     has_many :cards, through: :game_cards
+
+    validates :username, uniqueness: true
 end
