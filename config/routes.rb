@@ -5,6 +5,7 @@ Rails.application.routes.draw do
         resources :users, :games, :cards, only: [:create, :show, :index, :edit, :destroy]
         post '/login', to: 'auth#create'
         get '/validate', to: 'auth#validate'
+        get '/totals', to: 'users#score_totals'
 
     end
   end

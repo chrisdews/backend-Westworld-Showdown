@@ -14,7 +14,13 @@ class Api::V1::UsersController < ApplicationController
 
     def index
         users = User.all
+        #byebug
         render json: users
+    end
+
+    def score_totals
+      totals = User.all_totals
+      render json: totals
     end
 
     private 
