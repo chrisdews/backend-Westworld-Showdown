@@ -18,8 +18,9 @@ Card.delete_all
 GameCard.delete_all
 
 testuser = User.create(username: 'mrtest', password: '1234')
+testuser2 = User.create(username: 'RossTest', password: '1234')
 testgame1 = Game.create(user: testuser, score: 12)
-testgame2 = Game.create(user: testuser, score: 2)
+testgame2 = Game.create(user: testuser2, score: 22)
 testgame3 = Game.create(user: testuser, score: 5)
 testgamecard1 = GameCard.create(game_id: 1, card_id: 2)
 testgamecard2 = GameCard.create(game_id: 2, card_id: 2)
