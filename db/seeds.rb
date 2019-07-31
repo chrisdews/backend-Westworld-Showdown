@@ -18,10 +18,10 @@ Card.delete_all
 GameCard.delete_all
 
 testuser = User.create(username: 'mrtest', password: '1234')
-testuser2 = User.create(username: 'RossTest', password: '1234')
-testgame1 = Game.create(user: testuser, score: 12)
-testgame2 = Game.create(user: testuser2, score: 22)
-testgame3 = Game.create(user: testuser, score: 5)
+
+testgame1 = Game.create(user: testuser, score: 10)
+testgame2 = Game.create(user: testuser, score: 10)
+testgame3 = Game.create(user: testuser, score: 10)
 testgamecard1 = GameCard.create(game_id: 1, card_id: 2)
 testgamecard2 = GameCard.create(game_id: 2, card_id: 2)
 testgamecard3 = GameCard.create(game_id: 3, card_id: 1)
@@ -123,12 +123,12 @@ hosts = [
       
     },
     { 
-      "name": "Clementine Pennyfeather",
+      "name": "Zombie Clementine",
       "description": "Clementine was one of the earliest hosts designed by Robert Ford's and Arnold Weber's startup called the Argos Initiative. She was though preceded by at least Dolores Abernathy.",
       "imageurl": "https://vignette.wikia.nocookie.net/westworld/images/4/44/Clementine_The_Riddle_of_the_Sphinx.jpg/revision/latest?cb=20180516165617",
-      "apperception": 12,
-      "charm": 18,
-      "aggression": 16
+      "apperception": 2,
+      "charm": 3,
+      "aggression": 20
     },
     { 
       "name": "Armistice",

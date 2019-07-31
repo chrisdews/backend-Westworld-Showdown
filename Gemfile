@@ -46,9 +46,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "active_model_serializers", "~> 0.10.10"
 
-group :test do
-  gem 'database_cleaner'
-end
+gem 'database_cleaner'
 # database cleaner for test db.
 
 gem "jwt", "~> 2.2"
