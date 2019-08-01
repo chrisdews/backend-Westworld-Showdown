@@ -29,7 +29,7 @@ testgamecard4 = GameCard.create(game_id: 2, card_id: 1)
 
 hosts = [
     {
-        "name": "Man in Black",
+        "name": "Many in Black",
         "imageurl": "https://vignette.wikia.nocookie.net/westworld/images/8/83/Old_William_Vanishing_Point.jpg/revision/latest/scale-to-width-down/310?cb=20180808183844",
         "description": "(former) Executive Vice President at Delos
         Majority Shareholder of Westworld, Member of the board of Delos Destinations, Philanthropist",
